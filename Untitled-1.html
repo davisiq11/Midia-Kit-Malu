@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídia Kit - Malu Castro</title>
+    <!-- Carregando Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Configuração da fonte Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f7f3ed; /* Um bege claro para o fundo */
+            color: #333;
+        }
+        .section-heading {
+            border-bottom: 2px solid #e0c8b3; /* Um marrom claro para a linha de destaque */
+            padding-bottom: 0.5rem;
+            margin-bottom: 1.5rem;
+        }
+        /* Estilos para cards de métricas */
+        .metric-card {
+            background-color: #ffffff;
+            border-radius: 1rem; /* Cantos mais arredondados */
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08); /* Sombra mais suave */
+            transition: transform 0.2s ease-in-out;
+        }
+        .metric-card:hover {
+            transform: translateY(-5px);
+        }
+        /* Estilos para botões de contato */
+        .btn-contact {
+            background-color: #a0522d; /* Um marrom quente para os botões */
+            color: white;
+            padding: 0.8rem 1.5rem;
+            border-radius: 0.75rem;
+            transition: background-color 0.3s ease;
+        }
+        .btn-contact:hover {
+            background-color: #8b4513; /* Tom mais escuro no hover */
+        }
+    </style>
+</head>
+<body class="antialiased leading-relaxed">
+    <div class="container mx-auto p-4 sm:p-6 lg:p-8 max-w-4xl bg-white shadow-xl rounded-2xl my-8">
+
+        <!-- Header Section -->
+        <header class="text-center py-8 bg-gradient-to-r from-[#ffe4b5] to-[#f7d7bf] rounded-t-xl">
+            <h1 class="text-5xl font-extrabold text-gray-800 tracking-tight mb-2">Malu Castro</h1>
+            <p class="text-xl text-gray-600">@malucastro.daily</p>
+        </header>
+
+        <!-- About Me Section -->
+        <section class="py-8 px-4">
+            <h2 class="text-3xl font-bold section-heading text-gray-700">Sobre Mim</h2>
+            <div class="flex flex-col md:flex-row items-center md:space-x-8">
+                <div class="md:w-1/2 mb-6 md:mb-0">
+                    <img src="fotos/foto perfil.jpeg" alt="Malu Castro em atividade física" class="rounded-xl shadow-lg w-full h-auto object-cover">
+                </div>
+                <div class="md:w-1/2 text-gray-700 leading-relaxed text-lg">
+                    <p class="mb-4">
+                        Oi! Sou Malu Castro, baiana morando em São Paulo. Influencer, psicóloga, neurocientista, e atleta nas horas vagas (rsrs). Sou profundamente apaixonada pelo movimento em todas as suas formas.
+                    </p>
+                    <p class="mb-4">
+                        Nas minhas redes sociais, compartilho um lifestyle leve e cheio de motivação, abordando temas como fitness, relacionamento e tudo o que envolve uma vida mais ativa, equilibrada e real!
+                    </p>
+                    <p>
+                        Construí uma comunidade fiel e cada vez mais engajada no Instagram e TikTok, onde as reflexões do dia a dia e a paixão por um estilo de vida saudável fazem com que essas pessoas se conectem comigo. 
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Content Creation Section -->
+        <section class="py-8 px-4">
+            <h2 class="text-3xl font-bold section-heading text-gray-700">Crio Conteúdos Sobre...</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 text-center">
+                <div class="p-6 bg-white rounded-xl shadow-md flex flex-col items-center justify-center">
+                    <img src="fotos/FotoLifestyle.jpeg" alt="Lifestyle" class="w-64 h-64 object-contain mb-3">
+                    <p class="text-xl font-semibold text-gray-800">Lifestyle</p>
+                </div>
+                <div class="p-6 bg-white rounded-xl shadow-md flex flex-col items-center justify-center">
+                    <img src="fotos/FotoTreino.jpeg" alt="Treinos" class="w-64 h-64 object-contain mb-3">
+                    <p class="text-xl font-semibold text-gray-800">Treinos</p>
+                </div>
+                <div class="p-6 bg-white rounded-xl shadow-md flex flex-col items-center justify-center">
+                    <img src="fotos/FotoRelacionamento.jpeg" alt="Relacionamento" class="w-64 h-64 object-contain mb-3">
+                    <p class="text-xl font-semibold text-gray-800">Relacionamento</p>
+                </div>
+                <div class="p-6 bg-white rounded-xl shadow-md flex flex-col items-center justify-center">
+                    <img src="fotos/FotoAlimentacao.jpeg" alt="Alimentação" class="w-64 h-64 object-contain mb-3">
+                    <p class="text-xl font-semibold text-gray-800">Alimentação</p>
+                </div>
+                <div class="p-6 bg-white rounded-xl shadow-md flex flex-col items-center justify-center">
+                    <img src="fotos/FotoRoupas.jpeg" alt="Roupas para Exercícios" class="w-64 h-64 object-contain mb-3">
+                    <p class="text-xl font-semibold text-gray-800">Roupas para Treino</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Main Metrics Section -->
+        <section class="py-8 px-4 bg-gray-50 rounded-xl">
+            <h2 class="text-3xl font-bold section-heading text-gray-700">Métricas Principais <br>31 mar - 7 mai</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Tiktok Metrics -->
+                <div class="bg-white p-6 rounded-xl shadow-lg metric-card">
+                    <h3 class="text-2xl font-semibold text-blue-600 mb-4">TikTok</h3>
+                    <div class="space-y-4">
+                        <div class="flex justify-between items-center text-gray-700 text-lg">
+                            <span>Visualizações de Publicação:</span>
+                            <span class="font-bold text-gray-900">1.3M <span class="text-green-500 text-base">(+9.747%)</span></span>
+                        </div>
+                        <div class="flex justify-between items-center text-gray-700 text-lg">
+                            <span>Visualizações de Perfil:</span>
+                            <span class="font-bold text-gray-900">8.110 <span class="text-green-500 text-base">(+4.845%)</span></span>
+                        </div>
+                        <div class="flex justify-between items-center text-gray-700 text-lg">
+                            <span>Curtidas:</span>
+                            <span class="font-bold text-gray-900">158K <span class="text-green-500 text-base">(+14.676%)</span></span>
+                        </div>
+                        <div class="flex justify-between items-center text-gray-700 text-lg">
+                            <span>Compartilhamentos:</span>
+                            <span class="font-bold text-gray-900">23K <span class="text-green-500 text-base">(+48.961%)</span></span>
+                        </div>
+                        <div class="flex justify-between items-center text-gray-700 text-lg">
+                            <span>Comentários:</span>
+                            <span class="font-bold text-gray-900">6.593 <span class="text-green-500 text-base">(+12.339%)</span></span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- TikTok Metrics -->
+                <div class="bg-white p-6 rounded-xl shadow-lg metric-card">
+                    <h3 class="text-2xl font-semibold text-pink-600 mb-4">Instagram</h3>
+                    <div class="space-y-4">
+                        <div class="flex justify-between  text-gray-700 text-lg">
+                            <span>Visualizações:</span>
+                            <span class="font-bold text-gray-900">310.197</span>
+                        </div>
+                        <div class="flex justify-between items-center text-gray-700 text-lg">
+                            <span>Contas Alcançadas:</span>
+                            <span class="font-bold text-gray-900">150.150 <span class="text-green-500 text-base">(+765%)</span></span>
+                        </div>
+                        <div class="flex justify-between items-center text-gray-700 text-lg">
+                            <span>• Seguidores:</span>
+                            <span class="font-bold text-gray-900">30.4%</span>
+                        </div>
+                        <div class="flex justify-between items-center text-gray-700 text-lg">
+                            <span>• Não Seguidores:</span>
+                            <span class="font-bold text-gray-900">69.6%</span>
+                        </div>
+                        <div class="flex justify-between items-center text-gray-700 text-lg">
+                            <span>Gênero:</span>
+                            <span class="font-bold text-pink-800">91,4% fem <span class="font-bold text-gray-700">| </span><span class="font-bold text-blue-800">8,6% mas</span></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Audience Demographics Section -->
+        <section class="py-8 px-4">
+            <h2 class="text-3xl font-bold section-heading text-gray-700">Público</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Cities -->
+                <div class="bg-white p-6 rounded-xl shadow-lg metric-card">
+                    <h3 class="text-2xl font-semibold text-gray-800 mb-4">Principais Cidades</h3>
+                    <ul class="list-disc list-inside space-y-2 text-gray-700 text-lg">
+                        <li>São Paulo: <span class="font-bold">10,1%</span></li>
+                        <li>Salvador: <span class="font-bold">4,0%</span></li>
+                        <li>Rio de Janeiro: <span class="font-bold">2,7%</span></li>
+                        <li>Belo Horizonte: <span class="font-bold">1,8%</span></li>
+                    </ul>
+                </div>
+                <!-- Age & Gender -->
+                <div class="bg-white p-6 rounded-xl shadow-lg metric-card">
+                    <h3 class="text-2xl font-semibold text-gray-800 mb-4">Faixa Etária e Gênero</h3>
+                    <div class="space-y-4">
+                        <h4 class="text-xl font-medium text-gray-700">Principais Faixas Etárias:</h4>
+                        <ul class="list-disc list-inside space-y-2 text-gray-700 text-lg">
+                            <li>18-24: <span class="font-bold">51,3%</span></li>
+                            <li>25-34: <span class="font-bold">42,8%</span></li>
+                            <li>35-44: <span class="font-bold">3,8%</span></li>
+                            <li>45-54: <span class="font-bold">0,9%</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Brands Section -->
+        <section class="py-8 px-4 bg-gray-50 rounded-xl">
+            <h2 class="text-3xl font-bold section-heading text-gray-700">Marcas Que Trabalho</h2>
+            <div class="flex flex-wrap justify-center gap-6">
+                <div class="p-4 bg-white rounded-xl shadow-md text-center flex items-center justify-center min-w-[120px] sm:min-w-[150px] metric-card">
+                    <img src="fotos/logocaffeine.webp" alt="Logo Caffeine Army" class="max-h-16 w-auto object-contain" href="https://instagram.com/malucastro.daily">
+                </div>
+                <div class="p-4 bg-white rounded-xl shadow-md text-center flex items-center justify-center min-w-[120px] sm:min-w-[150px] metric-card">
+                    
+                    <img src="fotos/logomarcaguday.png" alt="Logo Guday" class="max-h-16 w-auto object-contain">
+                </div>
+                <div class="p-4 bg-white rounded-xl shadow-md text-center flex items-center justify-center min-w-[120px] sm:min-w-[150px] metric-card">
+                    <img src="fotos/logodot.jpeg" alt="Logo Dot Energy" class="max-h-6 w-auto object-contain">
+                </div>
+                <div class="p-4 bg-white rounded-xl shadow-md text-center flex items-center justify-center min-w-[120px] sm:min-w-[150px] metric-card">
+                    <img src="fotos/logokaisan.png" alt="Logo Dot Energy" class="max-h-16 w-auto object-contain">
+                </div>
+                <!-- Add more brand placeholders if needed -->
+            </div>
+            <div class="text-center mt-8">
+                <a href="https://www.instagram.com/s/aGlnaGxpZ2h0OjE4MzQ2MDA5MjA3MTU1NTAz?story_media_id=3605014805932866250&igsh=MXI3aWdmZ2NmOG5vdA==" class="inline-block transition duration-300 transform hover:scale-105">
+                    <img src="fotos/cliqueaqui.png" alt="Malu Castro com produtos de marcas parceiras" class="rounded-xl shadow-lg w-full max-w-lg mx-auto h-auto object-cover">
+                </a>
+            </div>
+        </section>
+
+        <!-- Call to Action / Contact Section -->
+        <section class="py-8 px-4 text-center bg-gradient-to-r from-[#f7d7bf] to-[#ffe4b5] rounded-b-xl mt-8">
+            <h2 class="text-3xl font-bold text-gray-800 mb-4">Vamos criar algo incrível juntos?</h2>
+            <p class="text-lg text-gray-700 mb-6">Estou pronta para inovar e conectar sua marca com uma audiência engajada e apaixonada por um estilo de vida ativo e equilibrado.</p>
+            <div class="flex flex-col sm:flex-row justify-center items-center gap-4">
+                <a href="https://instagram.com/malucastro.daily" target="_blank" class="btn-contact">
+                    Instagram: @malucastro.daily
+                </a>
+                <a href="https://tiktok.com/@malucastro.daily" target="_blank" class="btn-contact">
+                    TikTok: @malucastro.daily
+                </a>
+                <a href="https://wa.me/5571991135919" target="_blank" class="btn-contact">
+                    WhatsApp: (71) 99113-5919
+                </a>
+            </div>
+        </section>
+
+    </div>
+</body>
+</html>
